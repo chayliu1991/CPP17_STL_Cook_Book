@@ -375,10 +375,6 @@ auto int_to_string ([](int i) {
 }
 ```
 
-### How it works...
-
-# How it works...
-
 `std::transform`函数工作原理和`std::copy`差不多，不过在拷贝的过程中会对源容器中的元素进行变换，这个变换函数由用户提供。
 
 ## 在有序和无序的vector中查找元素
@@ -643,7 +639,7 @@ const auto [min_it, max_it] (minmax_element(begin(v), end(v)));
 
 `std::clamp`函数无法对一个范围进行可迭代操作。其接受三个值作为参数：一个给定值，一个最小值，一个最大值。这个函数的返回值则会将对应的值截断在最大值和最小值的范围内。我们也能使用`max(min_val, min(max_val, x))`来替代`std::clamp(x, min_val, max_val)`。
 
-### 在字符串中定位模式并选择最佳实现——std::search
+## 在字符串中定位模式并选择最佳实现——std::search
 
 ### How to do it...
 
